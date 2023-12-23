@@ -33,7 +33,7 @@ h4 {
 .header-name {
     position:absolute;
     bottom: 0;    
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: white;
     text-shadow: 1px 1px 2px pink;
 }
@@ -118,6 +118,7 @@ h4 {
     height: 32px;
 }
 .footer {
+    padding-top:2rem;
     background-color: var(--blue);
     color: var(--white);
     /* padding-left: 8vw;
@@ -132,7 +133,7 @@ h4 {
 }
 .footer-description, .footer-address, .footer-number, .footer-email {
     padding-top:1rem;
-    padding-bottom:1rem;
+    padding-bottom:.5rem;
     padding-left:8vw;
     padding-right:8vw;
 }
@@ -141,12 +142,19 @@ h4 {
     display: grid;
     grid-auto-flow: column;
     justify-items: center;
+    padding-bottom: 2rem;
+    margin-left: 20vw;
+    margin-right: 20vw;
 }
-.footer svg {
-    margin:8px;
-    max-width: 64px;
-    max-height: 64px;
-
+.footer-linkedin, .footer-github {
+    margin: 8px;
+    max-width: 90px;
+    max-height: 90px;
+}
+.footer-linkedin-img, .footer-github-img {
+    margin:0px;
+    width: 64px;
+    height: 64px;
 }
 .footer-image {
     /* max-height: 400px; */
