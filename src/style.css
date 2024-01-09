@@ -105,6 +105,7 @@ h4 {
  }
  .project-name {
     font-size: 1.8rem;
+    white-space: nowrap;
  }
  .project-description {
     color: var(--darkgrey)
@@ -163,7 +164,7 @@ h4 {
 }
 @media (min-width: 501px) {
     .header {
-        background-image: linear-gradient(162deg, var(--blue) 45%, var(--white) calc(45% + 2px));
+        background-image: linear-gradient(162deg, var(--blue) 50%, var(--white) calc(50% + 2px));
         position: relative;
     }
     .header-one {
@@ -203,6 +204,49 @@ h4 {
     }
     .header-links {
         display:none;
+    }
+    .middle {
+        margin-bottom: 220px;
+    }
+    .project-container {
+        grid-template-columns: auto auto;
+        gap: 4%;
+    }
+    .footer {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 50% 50%;
+        padding: 2rem;
+    }
+    .footer-one {
+      padding-top: 2.5rem;
+    }
+    .footer-contact, .footer-description, .footer-address, .footer-number, .footer-email {
+        text-align: left;
+        padding-left: 1vw;
+    }
+    .footer-links {
+        display: grid;
+        grid-auto-flow: column;
+        justify-items: center;
+        padding-bottom: 2rem;
+        margin-left: 0;
+        /* margin-right: ; */
+    }
+    .footer-linkedin, .footer-github {
+        margin: 8px;
+        max-width: 64px;
+        max-height: 64px;
+    }
+    .footer-linkedin-img, .footer-github-img {
+        margin:0px;
+        width: 48px;
+        height: 48px;
+    }
+    .footer-image {
+        max-height: 100%;
+        /* max-width: 100%; */
+        object-fit:contain;
     }
 }
 @media (min-width:1001px) {
