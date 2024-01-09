@@ -78,6 +78,7 @@ h4 {
     display: grid;
    padding-left: 8vw;
    padding-right:8vw;
+   justify-content: center;
 }
 .project {
     display: grid;
@@ -104,7 +105,7 @@ h4 {
     align-items: center;
  }
  .project-name {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     white-space: nowrap;
  }
  .project-description {
@@ -162,7 +163,7 @@ h4 {
     max-width: 100%;
     object-fit:contain;
 }
-@media (min-width: 501px) {
+@media (min-width: 701px) and (max-width:1100px) {
     .header {
         background-image: linear-gradient(162deg, var(--blue) 50%, var(--white) calc(50% + 2px));
         position: relative;
@@ -185,7 +186,7 @@ h4 {
         padding-top: 4rem;
         padding-bottom: 4rem;
         margin-top: 20%;
-        margin-left:;
+        /* margin-left:; */
         width: 65%;
         box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, .1);
     }
@@ -249,6 +250,119 @@ h4 {
         object-fit:contain;
     }
 }
-@media (min-width:1001px) {
-
+@media (min-width:1101px) {
+    .header {
+        background-image: linear-gradient(162deg, var(--blue) 50%, var(--white) calc(50% + 2px));
+        position: relative;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 40% 60%;
+        padding-top: 5vw;
+    }
+    .header-one {
+        position: relative;
+        /* width:65%; */
+        /* margin-right:0; */
+        /* justify-self: center; */
+        /* margin: 10vw 10vw 0px 10vw; */
+        margin: 0;
+        margin-left:auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .header-picture-frame {
+       position: relative;
+    }
+    .header-picture {
+        max-height: 480px;
+        max-width: 400px;
+        object-fit:contain;
+    }
+    .header-name {
+        position:absolute;
+        bottom: 0px;  
+        right: auto;
+        left: auto;
+        font-size: 3.5rem;
+        color: white;
+        text-shadow: 1px 1px 2px pink;
+    }
+    .header-picture {
+        box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, .1);
+    }
+    .header-two {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left:0px;
+        margin-right: auto;
+        width: 80%;
+        max-height: 360px;
+        padding:12px;
+        box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, .1);
+    }
+    .about-me {
+     text-align: left;
+     padding-top:1rem;
+     padding-bottom:1rem;
+    }
+    .about-me-description {
+        font-size: 1rem;
+    }
+    .header-links {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: block;
+        text-align: right;
+        /* height:64px; */
+    }
+    .header-github, .header-linkedin {
+        height: 80px;
+        width: 80px;
+    }
+    .middle {
+        margin-bottom: 220px;
+    }
+    .project-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+    .project-image {
+        object-fit: contain;
+    }
+    .footer {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 50% 50%;
+        padding: 2rem;
+    }
+    .footer-one {
+      padding-top: 2.5rem;
+    }
+    .footer-contact, .footer-description, .footer-address, .footer-number, .footer-email {
+        text-align: left;
+        padding-left: 1vw;
+    }
+    .footer-links {
+        display: grid;
+        grid-auto-flow: column;
+        justify-items: center;
+        padding-bottom: 2rem;
+        margin-left: 0;
+        /* margin-right: ; */
+    }
+    .footer-linkedin, .footer-github {
+        margin: 8px;
+        max-width: 64px;
+        max-height: 64px;
+    }
+    .footer-linkedin-img, .footer-github-img {
+        margin:0px;
+        width: 48px;
+        height: 48px;
+    }
+    .footer-image {
+        max-height: 100%;
+        /* max-width: 100%; */
+        object-fit:contain;
+    }
 }
